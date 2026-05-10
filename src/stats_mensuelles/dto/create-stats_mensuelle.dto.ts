@@ -1,7 +1,6 @@
-/* eslint-disable @typescript-eslint/no-unsafe-call */
 import { IsNumber, IsString, Max, Min, MaxLength } from 'class-validator';
 
-export class CreateStatMensuelleDto {
+export class CreateStatsMensuelleDto {
   @IsNumber()
   @Min(2000)
   @Max(2100)

@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unsafe-call */
 import {
   IsString,
   IsNumber,
@@ -7,7 +6,7 @@ import {
   Min,
 } from 'class-validator';
 
-export class CreateCategorieServiceDto {
+export class CreateCategoriesServiceDto {
   @IsString()
   @MaxLength(80)
   nom!: string;

@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unsafe-call */
 import {
   Entity,
   PrimaryGeneratedColumn,
@@ -55,8 +54,8 @@ export class Ticket {
   @JoinColumn({ name: 'client_id' })
   client!: Client | null;
 
-  @Column({ length: 80, nullable: true, name: 'technicien_assigne' })
-  technicienAssigne!: string | null;
+  @Column()
+  technicienAssigne!: string;
 
   @Column({ type: 'timestamp', nullable: true, name: 'resolu_le' })
   resoluLe!: Date | null;

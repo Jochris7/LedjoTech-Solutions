@@ -26,6 +26,7 @@ import { DashboardModule } from './dashboard/dashboard.module';
         database: configService.get('DB_NAME'),
         autoLoadEntities: true,
         synchronize: true,
+        logging: true,
       }),
       inject: [ConfigService],
     }),
