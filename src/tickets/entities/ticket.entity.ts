@@ -54,8 +54,13 @@ export class Ticket {
   @JoinColumn({ name: 'client_id' })
   client!: Client | null;
 
-  @Column()
-  technicienAssigne!: string;
+  @Column({
+    type: 'varchar',
+    length: 80,
+    nullable: true,
+    name: 'technicien_assigne',
+  })
+  technicienAssigne!: string | null;
 
   @Column({ type: 'timestamp', nullable: true, name: 'resolu_le' })
   resoluLe!: Date | null;
