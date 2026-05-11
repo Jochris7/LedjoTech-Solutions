@@ -28,7 +28,7 @@ export class TransactionsController {
     return this.transactionsService.findAll();
   }
 
-  @Get('recent') // ← avant :id
+  @Get('recent')
   findRecent(@Query('limit', ParseIntPipe) limit: number) {
     return this.transactionsService.findRecent(limit);
   }
