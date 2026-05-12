@@ -6,8 +6,6 @@ import { StatsMensuellesModule } from './stats_mensuelles/stats_mensuelles.modul
 import { CategoriesServiceModule } from './categories_service/categories_service.module';
 import { ConfigService, ConfigModule } from '@nestjs/config';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { DashboardService } from './dashboard/dashboard.service';
-import { DashboardController } from './dashboard/dashboard.controller';
 import { DashboardModule } from './dashboard/dashboard.module';
 
 @Module({
@@ -37,7 +35,5 @@ import { DashboardModule } from './dashboard/dashboard.module';
     CategoriesServiceModule,
     DashboardModule,
   ],
-  providers: [DashboardService],
-  controllers: [DashboardController],
 })
 export class AppModule {}
